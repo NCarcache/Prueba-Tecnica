@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+:root{
+    --primary-color: #236cd5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: 100px auto;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 28px;
+}
+
+.container header{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.new-activity{
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 20px;
+    margin-block-end: 40px;
+    height: 40px;
+}
+
+.new-activity input{
+    font-size: 16px;
+    width: 80%;
+    padding-inline:10px;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
+.btn-add{
+    padding-inline: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0.4;
+    font-size: 16px;
+}
+
+.active{
+    pointer-events: auto;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.activities{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.activities li{
+    list-style: none;
+    margin-block:8px;
+    padding: 10px;
+    background-color: #dfe8f5;
+    border-radius: 5px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.activities li svg{
+    position: absolute;
+    right: 24px;
+    cursor: pointer;
+}
+
+.activities li svg:hover{
+    color: #f74e4e;
+}
